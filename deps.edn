@@ -1,0 +1,16 @@
+{:paths ["src" "dev" "firebase"]
+ :deps  {;stuff to help develop and compile cljs source
+         org.clojure/clojure       {:mvn/version "1.10.2-alpha1"}
+         thheller/shadow-cljs {:mvn/version "2.12.6"}
+         nrepl/nrepl                 {:mvn/version "0.6.0"}
+         cider/piggieback            {:mvn/version "0.4.0"}
+
+         ;cljs source libraries
+         reagent/reagent           {:mvn/version "1.0.0"}
+         lambdaisland/deja-fu {:git/url "https://github.com/lambdaisland/deja-fu"
+                               :sha "0edd389bb126edbfb781b688cd9fc01617b4f66a"}
+         cljc.java-time/cljc.java-time {:mvn/version "0.1.16"}
+         
+         ; both 
+         org.clojure/clojurescript {:mvn/version "1.10.844"}
+         }}
