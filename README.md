@@ -6,10 +6,12 @@ in a web application. The accompanying blog post can be [found here]().
 Disclaimer: I am the author of one of the libraries considered, cljc.java-time.
 
 The application lets a user choose a future date and then informs them how many days there are 
-between now and that date - so pretty simple ;-)
+between now and that date - so pretty simple.
 
 There are two implementations, one using [Deja-Fu](https://github.com/lambdaisland/deja-fu) (which is based on the Javascript Date API)
 and one using [cljc.java-time](https://github.com/henryw374/cljc.java-time) (which is a 1-1 API name-match with java.time)
+
+Each of the versions has 2 deliberate bugs - can you spot them?
 
 * [js-date version](https://friendly-eats-demo-e71b7.web.app/js-date.html)
 * [java.time version](https://friendly-eats-demo-e71b7.web.app/java-time.html)
