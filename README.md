@@ -11,10 +11,10 @@ between now and that date - so pretty simple.
 There are two implementations, one using [Deja-Fu](https://github.com/lambdaisland/deja-fu) (which is based on the Javascript Date API)
 and one using [cljc.java-time](https://github.com/henryw374/cljc.java-time) (which is a 1-1 API name-match with java.time)
 
-Each of the versions has 2 deliberate bugs - can you spot them?
+The Deja-fu version has 2 deliberate bugs - as explained in the blog post linked above
 
-* [js-date version](https://friendly-eats-demo-e71b7.web.app/js-date.html)
-* [java.time version](https://friendly-eats-demo-e71b7.web.app/java-time.html)
+* [Deja-Fu version](https://friendly-eats-demo-e71b7.web.app/js-date.html)
+* [cljc.java-time version](https://friendly-eats-demo-e71b7.web.app/java-time.html)
 
 These apps can be deployed on the web so that tools such as [PageSpeed](https://developers.google.com/speed/pagespeed/insights/)
 can be used to test them. 

@@ -4,11 +4,11 @@
             [time-lib-comparison.app-main :as app]))
 
 (defn interval-calc [event-date]
-  (cu/between cu/days (date/parse event-date) (date/now)))
+  (-> cu/days (cu/between (date/now) (date/parse event-date))))
 
 (defn tomorrow []
   (-> (date/now)
-      (date/plus-days 2)
+      (date/plus-days 1)
       str))
 
 (app/init interval-calc tomorrow)
