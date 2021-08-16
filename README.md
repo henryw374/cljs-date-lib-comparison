@@ -1,9 +1,9 @@
 # Time-lib Comparison
 
 This comparison app was created to compare how various Clojurescript time libraries impact user experience
-in a web application. The accompanying blog post can be [found here]().
+in a web application. The accompanying blog post can be [found here](https://widdindustries.com/clojurescript-datetime-lib-comparison/).
 
-Disclaimer: I am the author of one of the libraries considered, cljc.java-time.
+Disclaimer: I am the author of `cljc.java-time`, one of the libraries considered.
 
 The application lets a user choose a future date and then informs them how many days there are 
 between now and that date - so pretty simple.
