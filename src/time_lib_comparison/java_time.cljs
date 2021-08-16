@@ -8,7 +8,6 @@
 
 (defn tomorrow []
   (-> (date/now)
-      (date/plus-days 1)
-      str))
+      (date/plus-days 1)))
 
 (app/init interval-calc tomorrow)

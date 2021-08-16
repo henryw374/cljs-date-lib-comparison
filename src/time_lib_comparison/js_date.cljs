@@ -13,7 +13,6 @@
 
 (defn tomorrow []
   (-> (deja-fu/local-date)
-      (update :days inc)
-      str))
+      (update :days inc)))
 
 (app/init interval-calc tomorrow)

@@ -1,7 +1,7 @@
 (ns time-lib-comparison.view
   (:require [reagent.core :as r]))
 
-(defn app-view [interval-calc tomorrow-str]
+(defn app-view [interval-calc tomorrow]
   (r/with-let [days-until-event (r/atom nil)
                event-date (r/atom nil)] ;
     [:div
@@ -9,7 +9,7 @@
      [:br]
      [:label "Event date"]
      [:input {:type      "date"
-              :min       (tomorrow-str)
+              :min       (str (tomorrow))
               :value     @event-date
               :on-change (fn [e] (reset! event-date e.target.value))}]
      [:button {:disabled (not @event-date)
