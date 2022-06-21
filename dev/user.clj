@@ -1,8 +1,8 @@
 (ns user)
 
 (defn dev []
-  (require 'compilation)
-  (eval '(compilation/start-live-compilation))
+  (require 'cljs)
+  (eval '(cljs/start-live-compilation))
   )
 
 ;(dev)

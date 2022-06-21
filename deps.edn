@@ -1,16 +1,15 @@
-{:paths ["src" "dev" "firebase"]
+{:paths ["src" "dev" "web-target"]
  :deps  {;stuff to help develop and compile cljs source
-         org.clojure/clojure       {:mvn/version "1.10.2-alpha1"}
-         thheller/shadow-cljs {:mvn/version "2.12.6"}
-         nrepl/nrepl                 {:mvn/version "0.6.0"}
-         cider/piggieback            {:mvn/version "0.4.0"}
+         com.widdindustries/tiado-cljs2
+         { :local/root "../tiado-cljs2"
+          ;:git/url "https://github.com/henryw374/tiado-cljs2.git"
+          ;:sha "fbd9f3b8df3523ccf11bbc685836ce7f96f18068"
+          }
 
          ;cljs source libraries
-         reagent/reagent           {:mvn/version "1.0.0"}
+         reagent/reagent           {:mvn/version "1.1.1"}
          lambdaisland/deja-fu {:git/url "https://github.com/lambdaisland/deja-fu"
                                :sha "0edd389bb126edbfb781b688cd9fc01617b4f66a"}
-         cljc.java-time/cljc.java-time {:mvn/version "0.1.16"}
+         com.widdindustries/cljc.java-time {:mvn/version "0.1.19"}
          
-         ; both 
-         org.clojure/clojurescript {:mvn/version "1.10.844"}
          }}
