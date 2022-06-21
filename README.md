@@ -31,17 +31,8 @@ but to get the most out of Clojure, you should be able to send commands to a REP
 your editor. See [Practicalli](http://practicalli.github.io/clojure/clojure-editors/) for 
 straightforward guides for many popular editors. 
 
-Compile the `compilation` namespace and see the comment block at the bottom for some forms you might want to send in.
-`(compilation/restart-server)` starts a shadow server. With that running you can start dev builds, connect cljs repls, build prod
-artifacts, run build reports etc.
+Compile the `cljs` namespace and see the comment block at the bottom for some forms you might want to send in.
 
 ### Deploy to the web
 
 Having done prod builds, deploy the contents of the firebase/public dir to the web however you like.
-
-### Some points to note
-
-* No NPM? In this app, native javascript libraries are
-served from a CDN. This approach doesn't scale so well if you have dependencies between JS libs, but there is
-always the option to go the npm route if needed.  
-

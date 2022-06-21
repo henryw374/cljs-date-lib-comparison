@@ -1,9 +1,9 @@
 {:paths ["src" "dev" "web-target"]
  :deps  {;stuff to help develop and compile cljs source
          com.widdindustries/tiado-cljs2
-         { :local/root "../tiado-cljs2"
-          ;:git/url "https://github.com/henryw374/tiado-cljs2.git"
-          ;:sha "fbd9f3b8df3523ccf11bbc685836ce7f96f18068"
+         { ;:local/root "../tiado-cljs2"
+          :git/url "https://github.com/henryw374/tiado-cljs2.git"
+          :sha "fbd9f3b8df3523ccf11bbc685836ce7f96f18068"
           }
 
          ;cljs source libraries
